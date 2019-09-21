@@ -18,13 +18,10 @@ public class CanvasManager : MonoBehaviour {
         if (startButton)
         {
             startButton.SetActive(true);
-            //startButton.GetComponent<Button>().onClick.AddListener(GameManager.instance.StartGame);
             Time.timeScale = 1;
         }
         if (helpButton)
             helpButton.SetActive(true);
-        //if (creditButton)
-        //    creditButton.SetActive(true);
         if(mainText)
             mainText.SetActive(false);
         if (backButton)
@@ -38,7 +35,6 @@ public class CanvasManager : MonoBehaviour {
     {
         startButton.SetActive(false);
         helpButton.SetActive(false);
-        //creditButton.SetActive(false);
 
         mainText.SetActive(true);
         backButton.SetActive(true);
@@ -63,8 +59,7 @@ public class CanvasManager : MonoBehaviour {
     {
         startButton.SetActive(true);
         helpButton.SetActive(true);
-       // creditButton.SetActive(true);
-
+ 
         mainText.SetActive(false);
         backButton.SetActive(false);
     }

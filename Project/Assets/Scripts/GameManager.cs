@@ -41,20 +41,6 @@ public class GameManager : MonoBehaviour {
 		
 	}
 
-    //public void spawnPlayer(int spawnLocation)
-    //{
-    //    string spawnPointName = SceneManager.GetActiveScene().name + "_" + spawnLocation;  
-
-    //    Transform spawnPointTransform = GameObject.Find(spawnPointName).GetComponent<Transform>();
-
-    //    if (playerPrefab && spawnPointTransform)
-    //    {
-    //        player = Instantiate(playerPrefab, spawnPointTransform.position, spawnPointTransform.rotation);
-    //    }
-    //    else
-    //        Debug.Log("Missing prefab or could not find transform.");
-
-    //}
 
     public static GameManager instance
     {
@@ -66,17 +52,7 @@ public class GameManager : MonoBehaviour {
     {
         SceneManager.LoadScene(scene);
     }
-
-    //public GameObject player
-    //{
-    //    get { return _player; }
-    //    set
-    //    {
-    //        _player = value;
-    //        cc = player.GetComponent<Player>();
-
-    //    }
-    //}
+   
 
     public void StartGame()
     {
@@ -90,19 +66,6 @@ public class GameManager : MonoBehaviour {
         SceneManager.LoadScene("Start");
     }
 
-    //public void spawnPlayer(string spawnLocation)
-    //{
-
-    //    Transform spawnPointTransform = GameObject.Find(spawnLocation).GetComponent<Transform>();
-
-    //    if (playerPrefab && spawnPointTransform)
-    //    {
-    //        player = Instantiate(playerPrefab, spawnPointTransform.position, spawnPointTransform.rotation);
-    //    }
-    //    else
-    //        Debug.Log("Missing prefab or could not find transform.");
-
-    //}
 
     public void Load(string name)
     {
